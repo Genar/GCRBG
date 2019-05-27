@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Genar Codina" => 'genarcodina@gmail.com' }
 
-  spec.platform = :ios, "12,2"
+  spec.platform = :ios, "12.2"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/Genar/GCRBG.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "GCRGB/**/*.{h,swift}"
