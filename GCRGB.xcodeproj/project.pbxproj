@@ -10,6 +10,7 @@
 		ED516DE7229BCBE300CCE9A3 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED516DE6229BCBE300CCE9A3 /* Curry.framework */; };
 		ED516DE9229BCC1300CCE9A3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED516DE8229BCC1300CCE9A3 /* Quick.framework */; };
 		ED516DEB229BCC1A00CCE9A3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED516DEA229BCC1A00CCE9A3 /* Nimble.framework */; };
+		ED516DED229BE15B00CCE9A3 /* GCRGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED516DEC229BE15B00CCE9A3 /* GCRGBUIColor.swift */; };
 		EDFCECB72296F0DF00DF6ADC /* GCRGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFCECAD2296F0DF00DF6ADC /* GCRGB.framework */; };
 		EDFCECBC2296F0DF00DF6ADC /* GCRGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCECBB2296F0DF00DF6ADC /* GCRGBTests.swift */; };
 		EDFCECBE2296F0DF00DF6ADC /* GCRGB.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFCECB02296F0DF00DF6ADC /* GCRGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 		ED516DE6229BCBE300CCE9A3 /* Curry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED516DE8229BCC1300CCE9A3 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED516DEA229BCC1A00CCE9A3 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED516DEC229BE15B00CCE9A3 /* GCRGBUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCRGBUIColor.swift; sourceTree = "<group>"; };
 		EDE14B48229708110019C007 /* Curry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE14B4A229708640019C007 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE14B4C2297086D0019C007 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 			children = (
 				EDFCECB02296F0DF00DF6ADC /* GCRGB.h */,
 				EDFCECB12296F0DF00DF6ADC /* Info.plist */,
+				ED516DEC229BE15B00CCE9A3 /* GCRGBUIColor.swift */,
 			);
 			path = GCRGB;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				TargetAttributes = {
 					EDFCECAC2296F0DF00DF6ADC = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					EDFCECB52296F0DF00DF6ADC = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -226,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED516DED229BE15B00CCE9A3 /* GCRGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +378,7 @@
 		EDFCECC22296F0DF00DF6ADC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -390,6 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.genar.GCRGB;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,6 +405,7 @@
 		EDFCECC32296F0DF00DF6ADC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -423,6 +431,7 @@
 		EDFCECC52296F0DF00DF6ADC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KG8MX2KZLY;
 				INFOPLIST_FILE = GCRGBTests/Info.plist;
@@ -441,6 +450,7 @@
 		EDFCECC62296F0DF00DF6ADC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KG8MX2KZLY;
 				INFOPLIST_FILE = GCRGBTests/Info.plist;
