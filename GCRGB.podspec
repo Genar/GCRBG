@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
   spec.source = { git: "https://github.com/Genar/GCRBG.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "GCRGB/**/*.{h,swift}"
 
-  spec.dependency "Curry", "~> 1.4.0"
+  spec.dependency "Curry", "~> 4.0.2"
 end
 
